@@ -1,0 +1,100 @@
+body{
+	color: #3f4238;
+	background-color: #ECF0F1;
+	font-size: 18px;
+	font-family: American Typewriter;
+	margin: 0;
+}
+
+header{
+	text-shadow: 2px 2px 6px black;
+	color: #faf3dd;
+	background-color: #d9ae94;
+	text-align: center;
+	height: auto;
+	padding: 40px;
+}
+
+.title{
+	font-size: 38px;
+	font-weight: bold;
+}
+
+#menu, #contact{
+	text-shadow: 2px 2px 6px black;
+	height: 65px;
+	font-size: 20px;
+	letter-spacing: 1px;
+	font-weight: bold;
+	color: white;
+	background-color: #666666;
+	display: flex;
+	text-align: center;
+}
+
+.items{
+	cursor: pointer;
+	text-align: center;
+	flex: 1;
+}
+
+#aPropos{
+	text-align: justify;
+	display: flex;
+}
+
+#imgProfil{
+	text-align: center;
+	padding-right: 30px;
+	height: 300px;
+	width: 300px;
+	border-radius: 100%;
+}
+
+h4{
+	text-align: center;
+}
+#bloc1, #bloc2{
+	display: flex;
+}
+
+#aPropos, #bloc1, #bloc2{
+	margin-top: 40px;
+	padding-left: 60px;
+	padding-right: 60px;
+}
+
+#bloc2{
+	line-height: 11px;
+}
+
+#mesCompetences, #mesAtouts, #mesDiplomes, #mesExperiences{
+	width: 50%;
+}
+
+#mesCompetences{
+	text-align: center;
+}
+
+#mesAtouts{
+	text-align: justify;
+}
+
+#mesDiplomes, #mesExperiences{
+	text-align: center;
+}
+
+.lieu {
+	font-size: 15px;
+	font-style: italic; 
+}
+
+footer{
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+}
+.icons{
+	width: 30px;
+	height: 30px;
+}

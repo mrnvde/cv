@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Marine Vandromme</title>
+	<meta charset="utf-8">
+	<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+		<div id="bigTitle">
+			<span class="title">MARINE VANDROMME</span><br>
+			<span class="title">Développeuse Web et Web Mobile Junior</span>
+		</div>
+	</header>
+	<div id="menu">
+		<p class="items" id="accueil">À PROPOS DE MOI</p>
+		<p class="items" id="competences">COMPÉTENCES ET ATOUTS</p>
+		<p class="items" id="diplomes">DIPLÔMES ET EXPÉRIENCES</p>
+	</div>
+
+	<div id="aPropos">
+		<img src="IMG_444.png" id="imgProfil">
+		<div>
+			<p class="bienvenue">Bienvenue à toi</p>
+			<p>Je m'appelle Marine, j'ai 25 ans, je vis à Béthune (62) et je suis actuellement en Titre Professionnel Développeur Web et Web Mobile.<br>
+			Avec la crise sanitaire qui a explosé début d'année 2020, j'ai eu l'opportunité d'avoir de la réflexion sur mon avenir. Je n'ai pas eu besoin de beaucoup de temps pour que l'idée de devenir Développeuse me vienne en tête, c'était une évidence. Moi qui navigue quotidiennement sur le web, l'idée de pouvoir participer à tous cela me motive énormément. Mais surtout le challenge et les multiples possibilités que peut offrir ce métier, tant il est vaste et sans limite.<br><br>
+			Dans le cadre de ce Titre Professionnel je suis à la recherche d'un stage, non rémunéré, d'une durée de 12 semaines <strong>(28 juin au 17 septembre)</strong>, essentiel à l'obtention de mon Titre Professionnel Développeur Web et Web Mobile.<br><br>
+			N'hésitez pas à me contacter via mes coordonées que vous trouverez en bas de page.
+		</div>
+	</div>
+	<div id="bloc1" style="display: none;">
+		<div id="mesCompetences">
+			<span><strong>Languages de programmation :</strong></span><br><br>
+					<span>HTML5</span><br>
+					<span>CSS3</span><br>
+					<span>JavaScript</span><br>
+					<span>PHP</span><br><br>
+
+			<span><strong>Outils de développement :</strong></span><br><br>
+					<span>GitHub</span><br>
+					<span>Bootstrap</span><br>
+					<span>PowerPoint</span><br>
+					<span>Excel</span><br>
+					<span>Word</span><br>
+					<span>Keynote</span><br>
+					<span>iMovie</span><br>
+		</div>
+
+		<div id="mesAtouts">
+				<p><strong>Détermination :</strong> abandonner ne fait pas partie de mon vocabulaire</p>
+				<p><strong>Autonomie :</strong> je suis capable d'effectuer des tâches ou projets seule</p>
+				<p><strong>Travail en équipe :</strong> le travail en équipe est pour moi une force supplémentaire à la réalisation de projet</p>
+				<p><strong>Capacité d'adaptation :</strong> j'ai toujours eu une facilité à m'adapter. La nouveauté ne me fait pas peur</p>
+		</div>
+	</div>
+
+	<div id="bloc2" style="display: none;">
+		<div id="mesDiplomes">
+				<div>
+					<h4>Titre Professionnel Développeur Web et Web Mobile</h4>
+					<p>ID Formation / Lens</p>
+					<p>Décembre 2020 à octobre 2021</p>
+				</div>
+
+				<div>
+					<h4>Agent de Fabrication Industrielle</h4>
+					<p>AFPA / Lièvin</p>
+					<p>Octobre 2017 à janvier 2018</p>
+				</div>
+
+				<div>
+					<h4>Baccalauréat Professionnel de Secrétariat</h4>
+					<p>Lycée Carnot / Bruay-la-Buissière</p>
+					<p>Septembre 2011 à juin 2014</p>
+				</div>
+		</div>
+
+		<div id="mesExperiences">
+			<div>
+				<h4>Agent de production</h4>
+				<p>Atlantic / Billy-Berclau</p>
+				<p>Décembre 2018 à mars 2020</p>
+			</div>
+
+			<div>
+				<h4>Agent de fabrication</h4>
+				<p>PSA / Douvrin</p>
+				<p>Mars 2018 à juillet 2018</p>
+			</div>
+
+			<div>
+				<h4>Agent de conditionnement</h4>
+				<p>Cérélia / Lièvin</p>
+				<p>Mars 2017 à août 2017</p>
+			</div>
+
+			<div>
+				<h4>Agent de façonnage</h4>
+				<p>Délifrance / Labeuvrière</p>
+				<p>Juin 2015 à décembre 2016</p>
+			</div>
+		</div>
+	</div>
+
+	<footer>
+		<div id="contact">
+			<p class="items">06 19 05 66 47</p>
+			<p class="items">marinevandromme@live.fr</p>
+			<p class="items">
+				<a href="https://www.linkedin.com/in/mrnvde/" target="_blank"><img src="linkedin.png" class="icons"></a>
+				<a href="https://github.com/mrnvde" target="_blank"><img src="github.png" class="icons"></a>
+				<a href="https://www.instagram.com/mrnvde/" target="_blank"><img src="insta.png" class="icons"></a>
+				<a href="https://www.facebook.com/mrnvde/" target="_blank"><img src="fb.png" class="icons"></a>
+			</p>
+		</div>
+	</footer>
+
+	<script>
+		$(document).ready(() =>{
+			$('#accueil').click(function (event) {
+				event.preventDefault()
+				$('#bloc1').hide()
+				$('#bloc2').hide()
+				$('#aPropos').show()
+			})
+			$('#competences').click(function (event) {
+				event.preventDefault()
+				$('#aPropos').hide()
+				$('#bloc2').hide()
+				$('#bloc1').show()
+			})
+			$('#diplomes').click(function (event) {
+				event.preventDefault()
+				$('#aPropos').hide()
+				$('#bloc1').hide()
+				$('#bloc2').show()
+			})
+		})
+	</script>
+</body>
+</html>
