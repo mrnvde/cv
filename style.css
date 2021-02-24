@@ -1,5 +1,5 @@
 body{
-	color: #3f4238;
+	color: #000;
 	background-color: #ECF0F1;
 	font-size: 18px;
 	font-family: American Typewriter;
@@ -16,6 +16,7 @@ header{
 }
 
 .title{
+	color: #faf3dd;
 	font-size: 38px;
 	font-weight: bold;
 }
@@ -51,9 +52,11 @@ header{
 	border-radius: 100%;
 }
 
-h4{
+h4, span{
+	color: #d08c60;
 	text-align: center;
 }
+
 #bloc1, #bloc2{
 	display: flex;
 }
@@ -73,11 +76,12 @@ h4{
 }
 
 #mesCompetences{
+	line-height: 0.01;
 	text-align: center;
 }
 
 #mesAtouts{
-	text-align: justify;
+	text-align: center;
 }
 
 #mesDiplomes, #mesExperiences{
