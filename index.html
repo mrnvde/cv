@@ -117,23 +117,26 @@
 
 	<script>
 		$(document).ready(() =>{
-			$('#accueil').click(function (event) {
+
+			$('#accueil').click((event) => {
 				event.preventDefault()
 				$('#bloc1').hide()
 				$('#bloc2').hide()
-				$('#aPropos').show()
+				$('#aPropos').fadeIn(800)
 			})
-			$('#competences').click(function (event) {
+
+			$('#competences').click((event) => {
 				event.preventDefault()
 				$('#aPropos').hide()
 				$('#bloc2').hide()
-				$('#bloc1').show()
+				$('#bloc1').fadeIn(800)
 			})
-			$('#diplomes').click(function (event) {
+
+			$('#diplomes').click((event) => {
 				event.preventDefault()
 				$('#aPropos').hide()
 				$('#bloc1').hide()
-				$('#bloc2').show()
+				$('#bloc2').fadeIn(800)
 			})
 		})
 	</script>
